@@ -1,0 +1,206 @@
+.taxonomy-page {
+  padding-top: 2rem;
+}
+
+.taxonomy-header {
+  margin-bottom: 2rem;
+}
+
+.taxonomy-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.75rem;
+}
+
+.taxonomy-tree-card {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.tree-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 1rem;
+}
+
+.tree-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.node-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  user-select: none;
+  font-size: 0.875rem;
+  transition: background-color 0.15s ease;
+}
+
+.node-row:hover {
+  background-color: var(--color-bg-subtle);
+}
+
+.domain-row {
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.cat-row {
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.tech-row {
+  font-weight: 500;
+  color: var(--color-text-main);
+}
+
+.tech-row.selected {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.node-icon {
+  color: var(--color-text-light);
+}
+
+.domain-icon { color: var(--color-primary); }
+.cat-icon { color: var(--color-secondary); }
+.tech-icon { color: var(--color-accent); }
+
+.tree-sub-tree {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tree-tech-list {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.tech-badge-count {
+  margin-left: auto;
+  font-size: 0.7rem;
+  background-color: var(--color-bg-subtle);
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--radius-full);
+  color: var(--color-text-light);
+}
+
+.tech-row.selected .tech-badge-count {
+  background-color: #dbeafe;
+  color: var(--color-primary);
+}
+
+/* Detail Pane */
+.taxonomy-detail-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tech-detail-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.tech-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.tech-category-pill {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  background-color: var(--color-primary-light);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+}
+
+.selected-tech-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+  margin-top: 0.25rem;
+}
+
+.tech-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: var(--color-bg-subtle);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.stat-num {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.stat-txt {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.tech-meta-row {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.tech-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.related-tech-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 1rem;
+}
+
+.related-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.related-chips {
+  display: flex;
+  gap: 0.4rem;
+}
+
+@media (max-width: 900px) {
+  .taxonomy-grid {
+    grid-template-columns: 1fr;
+  }
+}
